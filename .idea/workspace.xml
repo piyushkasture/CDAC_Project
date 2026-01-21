@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/AdminPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/PIMPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/test_admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/test_dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/test_pim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/DashboardPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/DashboardPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_login.py" afterDir="false" />
-    </list>
+    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +31,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in e2e.executor": "Run",
     "Python tests.Python tests in test_admin.py.executor": "Run",
+    "Python tests.Python tests in test_leave.py.executor": "Run",
     "Python tests.Python tests in test_login.py.executor": "Run",
+    "Python tests.Python tests in test_pim.py.executor": "Run",
+    "Python tests.Python tests in test_recruitment.py.executor": "Run",
     "Python.LoginPage.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -51,31 +45,24 @@
     "last_opened_file_path": "D:/Piyush_Kasture/Github/CDAC_Project"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_admin.py">
-    <configuration name="LoginPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_recruitment.py">
+    <configuration name="Python tests in e2e" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="CDAC_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/e2e" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/LoginPage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/e2e&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_admin.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_leave.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="CDAC_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +74,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/e2e/test_admin.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/e2e/test_leave.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -107,11 +94,45 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_pim.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CDAC_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/e2e/test_pim.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_recruitment.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CDAC_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/e2e/test_recruitment.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_admin.py" />
+        <item itemvalue="Python tests.Python tests in test_recruitment.py" />
+        <item itemvalue="Python tests.Python tests in test_leave.py" />
+        <item itemvalue="Python tests.Python tests in e2e" />
         <item itemvalue="Python tests.Python tests in test_login.py" />
-        <item itemvalue="Python.LoginPage" />
+        <item itemvalue="Python tests.Python tests in test_pim.py" />
       </list>
     </recent_temporary>
   </component>
