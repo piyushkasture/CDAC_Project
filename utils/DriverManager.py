@@ -2,36 +2,32 @@ from playwright.sync_api import sync_playwright
 
 
 class DriverManager:
-    _playwright = None
-    _browser = None
-    _context = None
-    _page = None
+    def __init__(self, browser_name="chromium", headless=False):
+        self.browser_name = browser_name
+        self.headless = headless
+        self.playwright = None
+        self.browser = None
+        self.context = None
+        self.page = None
 
-    @classmethod
-    def get_page(cls, browser_name="chromium", headless=False):
-        if cls._page is None:
-            cls._playwright = sync_playwright().start()
+    def start(self):
+        self.playwright = sync_playwright().start()
 
-            if browser_name == "firefox":
-                cls._browser = cls._playwright.firefox.launch(headless=headless)
-            elif browser_name == "edge":
-                cls._browser = cls._playwright.chromium.launch(channel="msedge", headless=headless)
-            else:
-                cls._browser = cls._playwright.chromium.launch(headless=headless)
+        if self.browser_name == "firefox":
+            self.browser = self.playwright.firefox.launch(headless=self.headless)
+        elif self.browser_name == "egde":
+            self.browser = self.playwright.chromium.launch(
+                channel="msedge", headless=self.headless
+            )
+        else:
+            self.browser = self.playwright.chromium.launch(headless=self.headless)
 
-            cls._context = cls._browser.new_context()
-            cls._page = cls._context.new_page()
+        self.context = self.browser.new_context()
+        self.page = self.context.new_page()
+        return self.page
 
-        return cls._page
-
-    @classmethod
-    def quit_browser(cls):
-        if cls._page:
-            cls._context.close()
-            cls._browser.close()
-            cls._playwright.stop()
-
-            cls._page = None
-            cls._context = None
-            cls._browser = None
-            cls._playwright = None
+    def stop(self):
+        if self.page:
+            self.context.close()
+            self.browser.close()
+            self.playwright.stop()
