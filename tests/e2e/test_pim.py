@@ -14,5 +14,4 @@ class TestPIM(BaseTest):
         login_page.login("Admin", "admin123")
         dashboard_page.go_to_pim()
 
-        assert pim_page.is_pim_page_loaded(), \
-            "PIM page did not load successfully"
+        assert pim_page.is_pim_page_loaded()

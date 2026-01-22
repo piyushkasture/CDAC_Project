@@ -14,5 +14,4 @@ class TestAdmin(BaseTest):
         login_page.login("Admin", "admin123")
         dashboard_page.go_to_admin()
 
-        assert admin_page.is_admin_page_loaded(), \
-            "Admin page did not load successfully"
+        assert admin_page.is_admin_page_loaded()

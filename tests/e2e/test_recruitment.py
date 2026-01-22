@@ -14,8 +14,7 @@ class TestRecruitment(BaseTest):
         login.login("Admin", "admin123")
         dashboard.go_to_recruitment()
 
-        assert recruitment.is_recruitment_page_loaded(), \
-            "Recruitment page did not load successfully"
+        assert recruitment.is_recruitment_page_loaded()
 
     def test_search_candidate(self):
         login = LoginPage(self.page)
@@ -26,5 +25,4 @@ class TestRecruitment(BaseTest):
         dashboard.go_to_recruitment()
         recruitment.search_candidate("John  Doe")
 
-        assert recruitment.record_found(), "Recruitment page did not load successfully" \
-            "Candidate search failed"
+        assert recruitment.record_found()
