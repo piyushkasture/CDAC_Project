@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="" />
+    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_leave.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_leave.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_pim.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_pim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_recruitment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_recruitment.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests in e2e.executor": "Run",
-    "Python tests.Python tests in test_admin.py.executor": "Run",
-    "Python tests.Python tests in test_leave.py.executor": "Run",
-    "Python tests.Python tests in test_login.py.executor": "Run",
-    "Python tests.Python tests in test_pim.py.executor": "Run",
-    "Python tests.Python tests in test_recruitment.py.executor": "Run",
-    "Python.LoginPage.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Piyush_Kasture/Github/CDAC_Project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in e2e.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_admin.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_leave.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_pim.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_recruitment.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LoginPage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Piyush_Kasture/Github/CDAC_Project&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests in test_recruitment.py">
     <configuration name="Python tests in e2e" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="CDAC_Project" />
