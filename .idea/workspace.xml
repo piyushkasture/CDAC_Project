@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/AdminPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/AdminPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/DashboardPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/DashboardPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_leave.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_leave.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_pim.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_pim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/test_recruitment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_recruitment.py" afterDir="false" />
-    </list>
+    <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
