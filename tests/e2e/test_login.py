@@ -2,25 +2,20 @@ import pytest
 from pages.LoginPage import LoginPage
 from pages.DashboardPage import DashboardPage
 from utils.base_test import BaseTest
-
-
-# class TestLogin(BaseTest):
-#     def test_login(self):
-#         self.page.fill("Admin", "admin123")
+from utils.DataReader import test_data
 
 class TestLogin(BaseTest):
+    @pytest.mark.parametrize("username,password", test_data())
 
-    def test_valid_login(self):
-        login_page = LoginPage(self.page)
-        dashboard_page = DashboardPage(self.page)
+    def test_login(self, page, username, password):
+        login = LoginPage(page)
+        dashboard = DashboardPage(page)
 
-        login_page.login("Admin", "admin123")
+        login.login(username, password)
 
-        assert dashboard_page.is_dashboard_visible()
-
-    def test_invalid_login(self):
-        login_page = LoginPage(self.page)
-
-        login_page.login("Admin", "wrongpassword")
-
-        assert "Invalid credentials" in login_page.get_error_message()
+        if username == "Admin" and password == "admin123":
+            assert dashboard.is_dashboard_visible(), \
+                f"Login failed for valid data: {username}/{password}"
+        else:
+            assert ("Required" in login.get_required_field_message() or "Invalid" in login.get_error_message())
+            # assert (login.get_required_field_message() or login.get_error_message())

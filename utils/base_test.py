@@ -1,8 +1,8 @@
 import pytest
 
-@pytest.mark.usefixtures("setup_and_teardown")
+@pytest.mark.usefixtures("page")
 class BaseTest:
-    page = None
+    pass
 
 
 
