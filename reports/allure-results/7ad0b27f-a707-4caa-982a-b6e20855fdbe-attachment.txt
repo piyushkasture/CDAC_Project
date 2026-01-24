@@ -1,0 +1,6 @@
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:19 Attempting to login with username: Admin and password: admin123
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:22 Entering username
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:25 Entering password
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:28 Click on login button
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:test_login.py:17 Navigate to login page
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:test_login.py:20 Successfully logged in

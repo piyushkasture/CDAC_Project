@@ -1,0 +1,1 @@
+{"uuid": "4c293ce9-aa1f-423a-aba0-55bbf2ae1977", "children": ["a145a3b7-3058-4688-b992-79e0843135c3", "96d47b11-7dd1-407c-8387-e1fa133d66f7"], "befores": [{"name": "pytestconfig", "status": "passed", "start": 1769262939554, "stop": 1769262939554}], "start": 1769262939554, "stop": 1769262957770}

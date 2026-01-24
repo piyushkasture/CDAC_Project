@@ -1,0 +1,3 @@
+[32mINFO    [0m test_login[chromium-Admin-ADMIN123-invalid]:test_login.py:14 Navigate to login page
+[32mINFO    [0m test_login[chromium-Admin-ADMIN123-invalid]:test_login.py:16 Navigate to dashboard page
+[32mINFO    [0m test_login[chromium-Admin-ADMIN123-invalid]:test_login.py:24 Invalid login

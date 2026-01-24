@@ -1,13 +1,67 @@
-{
-  "username":[
-    "Admin",
-    "12345",
-    "@@@@@@",
-    ""
-  ],
-  "password": [
-    "admin123",
-    "12345",
-    "********"
-  ]
-}
+[
+  {
+    "username": "Admin",
+    "password": "admin123",
+    "validity": "valid"
+  },
+  {
+    "username": "Admin",
+    "password": "12345",
+    "validity": "invalid"
+  },
+  {
+    "username": "Admin",
+    "password": "*****",
+    "validity": "invalid"
+  },
+  {
+    "username": "Admin",
+    "password": "ADMIN123",
+    "validity": "invalid"
+  },
+  {
+    "username": "Admin",
+    "password": "admin@123",
+    "validity": "invalid"
+  },
+  {
+    "username": "Admin",
+    "password": "",
+    "validity": "invalid"
+  },
+  {
+    "username": "12345",
+    "password": "admin123",
+    "validity": "invalid"
+  },
+  {
+    "username": "@@@@@",
+    "password": "admin123",
+    "validity": "invalid"
+  },
+  {
+    "username": "@@@@@",
+    "password": "*****",
+    "validity": "invalid"
+  },
+  {
+    "username": "AdminAdmin",
+    "password": "admin123",
+    "validity": "invalid"
+  },
+  {
+    "username": "",
+    "password": "admin123",
+    "validity": "invalid"
+  },
+  {
+    "username": "",
+    "password": "",
+    "validity": "invalid"
+  },
+  {
+    "username": "Adm!n",
+    "password": "admin123",
+    "validity": "invalid"
+  }
+]

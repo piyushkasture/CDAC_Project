@@ -1,0 +1,4 @@
+[35mDEBUG   [0m asyncio:proactor_events.py:633 Using proactor: IocpProactor
+[32mINFO    [0m test_login[chromium-AdminAdmin-admin123-invalid]:test_login.py:14 Navigate to login page
+[32mINFO    [0m test_login[chromium-AdminAdmin-admin123-invalid]:test_login.py:16 Navigate to dashboard page
+[32mINFO    [0m test_login[chromium-AdminAdmin-admin123-invalid]:test_login.py:24 Invalid login
