@@ -1,0 +1,7 @@
+[32mINFO    [0m test_login[chromium-@@@@@-admin123-invalid]:LoginPage.py:22 Attempting to login with username: @@@@@ and password: admin123
+[32mINFO    [0m test_login[chromium-@@@@@-admin123-invalid]:LoginPage.py:26 Entering username
+[32mINFO    [0m test_login[chromium-@@@@@-admin123-invalid]:LoginPage.py:30 Entering password
+[32mINFO    [0m test_login[chromium-@@@@@-admin123-invalid]:LoginPage.py:34 Click on login button
+[32mINFO    [0m test_login[chromium-@@@@@-admin123-invalid]:test_login.py:29 Getting error message, Invalid credentials
+[32mINFO    [0m browser_setup:conftest.py:50 Closing browser
+[32mINFO    [0m browser_setup:conftest.py:52 Browser closed successfully

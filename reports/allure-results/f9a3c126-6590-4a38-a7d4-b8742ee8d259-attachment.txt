@@ -1,0 +1,7 @@
+[32mINFO    [0m test_admin_page_search_user[chromium]:LoginPage.py:22 Attempting to login with username: Admin and password: admin123
+[32mINFO    [0m test_admin_page_search_user[chromium]:LoginPage.py:26 Entering username
+[32mINFO    [0m test_admin_page_search_user[chromium]:LoginPage.py:30 Entering password
+[32mINFO    [0m test_admin_page_search_user[chromium]:LoginPage.py:34 Click on login button
+[32mINFO    [0m test_admin_page_search_user[chromium]:AdminPage.py:31 Selected user role at index: 1
+[32mINFO    [0m browser_setup:conftest.py:50 Closing browser
+[32mINFO    [0m browser_setup:conftest.py:52 Browser closed successfully

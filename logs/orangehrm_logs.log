@@ -352,3 +352,560 @@
 01/25/2026 01:01:56 AM: INFO: browser_setup: Closing browser and cleaning up resources
 01/25/2026 01:01:56 AM: INFO: browser_setup: Browser cleanup completed
 01/25/2026 01:01:56 AM: INFO: test_report: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Adm!n-admin123-invalid]
+01/26/2026 11:18:22 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:18:22 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:18:22 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:18:22 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:18:35 PM: INFO: Browser started successfully
+01/26/2026 11:18:35 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:18:46 PM: INFO: Navigation completed successfully
+01/26/2026 11:18:46 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin123-valid]
+01/26/2026 11:18:46 PM: INFO: Attempting to login with username: Admin and password: admin123
+01/26/2026 11:18:49 PM: INFO: Entering username
+01/26/2026 11:18:49 PM: INFO: Entering password
+01/26/2026 11:18:56 PM: INFO: Click on login button
+01/26/2026 11:18:56 PM: INFO: Successfully logged in
+01/26/2026 11:19:00 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin123-valid]
+01/26/2026 11:19:00 PM: INFO: Test execution phase: call
+01/26/2026 11:19:00 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:19:00 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:19:00 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-admin123-valid.png
+01/26/2026 11:19:01 PM: INFO: Screenshot captured successfully
+01/26/2026 11:19:01 PM: INFO: Test PASSED
+01/26/2026 11:19:01 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:19:01 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:19:01 PM: INFO: Closing browser
+01/26/2026 11:19:01 PM: INFO: Browser closed successfully
+01/26/2026 11:19:01 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin123-valid]
+01/26/2026 11:19:01 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:19:01 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:19:01 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:19:01 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:19:02 PM: INFO: Browser started successfully
+01/26/2026 11:19:02 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:19:18 PM: INFO: Navigation completed successfully
+01/26/2026 11:19:18 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-12345-invalid]
+01/26/2026 11:19:18 PM: INFO: Attempting to login with username: Admin and password: 12345
+01/26/2026 11:19:21 PM: INFO: Entering username
+01/26/2026 11:19:21 PM: INFO: Entering password
+01/26/2026 11:19:25 PM: INFO: Click on login button
+01/26/2026 11:19:25 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:19:27 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-12345-invalid]
+01/26/2026 11:19:27 PM: INFO: Test execution phase: call
+01/26/2026 11:19:27 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:19:27 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:19:27 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-12345-invalid.png
+01/26/2026 11:19:27 PM: INFO: Screenshot captured successfully
+01/26/2026 11:19:27 PM: INFO: Test PASSED
+01/26/2026 11:19:27 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:19:27 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:19:27 PM: INFO: Closing browser
+01/26/2026 11:19:27 PM: INFO: Browser closed successfully
+01/26/2026 11:19:27 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-12345-invalid]
+01/26/2026 11:19:27 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:19:27 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:19:27 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:19:27 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:19:28 PM: INFO: Browser started successfully
+01/26/2026 11:19:28 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:19:34 PM: INFO: Navigation completed successfully
+01/26/2026 11:19:34 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-*****-invalid]
+01/26/2026 11:19:34 PM: INFO: Attempting to login with username: Admin and password: *****
+01/26/2026 11:19:36 PM: INFO: Entering username
+01/26/2026 11:19:36 PM: INFO: Entering password
+01/26/2026 11:19:40 PM: INFO: Click on login button
+01/26/2026 11:19:40 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:19:42 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-*****-invalid]
+01/26/2026 11:19:42 PM: INFO: Test execution phase: call
+01/26/2026 11:19:42 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:19:42 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:19:42 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-invalid.png
+01/26/2026 11:19:42 PM: INFO: Screenshot captured successfully
+01/26/2026 11:19:42 PM: INFO: Test PASSED
+01/26/2026 11:19:42 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:19:42 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:19:42 PM: INFO: Closing browser
+01/26/2026 11:19:42 PM: INFO: Browser closed successfully
+01/26/2026 11:19:42 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-*****-invalid]
+01/26/2026 11:19:42 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:19:42 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:19:42 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:19:42 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:19:43 PM: INFO: Browser started successfully
+01/26/2026 11:19:43 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:19:49 PM: INFO: Navigation completed successfully
+01/26/2026 11:19:49 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-ADMIN123-invalid]
+01/26/2026 11:19:49 PM: INFO: Attempting to login with username: Admin and password: ADMIN123
+01/26/2026 11:19:51 PM: INFO: Entering username
+01/26/2026 11:19:51 PM: INFO: Entering password
+01/26/2026 11:19:53 PM: INFO: Click on login button
+01/26/2026 11:19:53 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:19:53 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-ADMIN123-invalid]
+01/26/2026 11:19:53 PM: INFO: Test execution phase: call
+01/26/2026 11:19:53 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:19:53 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:19:53 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-admin123-invalid.png
+01/26/2026 11:19:54 PM: INFO: Screenshot captured successfully
+01/26/2026 11:19:54 PM: INFO: Test PASSED
+01/26/2026 11:19:54 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:19:54 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:19:54 PM: INFO: Closing browser
+01/26/2026 11:19:54 PM: INFO: Browser closed successfully
+01/26/2026 11:19:54 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-ADMIN123-invalid]
+01/26/2026 11:19:54 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:19:54 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:19:54 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:19:54 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:19:55 PM: INFO: Browser started successfully
+01/26/2026 11:19:55 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:20:02 PM: INFO: Navigation completed successfully
+01/26/2026 11:20:02 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin@123-invalid]
+01/26/2026 11:20:02 PM: INFO: Attempting to login with username: Admin and password: admin@123
+01/26/2026 11:20:04 PM: INFO: Entering username
+01/26/2026 11:20:04 PM: INFO: Entering password
+01/26/2026 11:20:06 PM: INFO: Click on login button
+01/26/2026 11:20:06 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:20:07 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin@123-invalid]
+01/26/2026 11:20:07 PM: INFO: Test execution phase: call
+01/26/2026 11:20:07 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:20:07 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:20:07 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-admin-123-invalid.png
+01/26/2026 11:20:07 PM: INFO: Screenshot captured successfully
+01/26/2026 11:20:07 PM: INFO: Test PASSED
+01/26/2026 11:20:07 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:20:07 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:20:07 PM: INFO: Closing browser
+01/26/2026 11:20:07 PM: INFO: Browser closed successfully
+01/26/2026 11:20:07 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin-admin@123-invalid]
+01/26/2026 11:20:07 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:20:07 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:20:07 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:20:07 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:20:08 PM: INFO: Browser started successfully
+01/26/2026 11:20:08 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:20:13 PM: INFO: Navigation completed successfully
+01/26/2026 11:20:13 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin--invalid]
+01/26/2026 11:20:13 PM: INFO: Attempting to login with username: Admin and password: 
+01/26/2026 11:20:14 PM: INFO: Entering username
+01/26/2026 11:20:14 PM: INFO: Entering password
+01/26/2026 11:20:14 PM: INFO: Click on login button
+01/26/2026 11:20:14 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:20:19 PM: INFO: Getting validation message, Required 
+01/26/2026 11:20:19 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin--invalid]
+01/26/2026 11:20:19 PM: INFO: Test execution phase: call
+01/26/2026 11:20:19 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:20:19 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:20:19 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin-invalid.png
+01/26/2026 11:20:19 PM: INFO: Screenshot captured successfully
+01/26/2026 11:20:19 PM: INFO: Test PASSED
+01/26/2026 11:20:19 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:20:19 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:20:19 PM: INFO: Closing browser
+01/26/2026 11:20:20 PM: INFO: Browser closed successfully
+01/26/2026 11:20:20 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Admin--invalid]
+01/26/2026 11:20:20 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:20:20 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:20:20 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:20:20 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:20:20 PM: INFO: Browser started successfully
+01/26/2026 11:20:20 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:21:12 PM: INFO: Navigation completed successfully
+01/26/2026 11:21:12 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-12345-admin123-invalid]
+01/26/2026 11:21:12 PM: INFO: Attempting to login with username: 12345 and password: admin123
+01/26/2026 11:21:17 PM: INFO: Entering username
+01/26/2026 11:21:17 PM: INFO: Entering password
+01/26/2026 11:21:19 PM: INFO: Click on login button
+01/26/2026 11:21:19 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:21:19 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-12345-admin123-invalid]
+01/26/2026 11:21:19 PM: INFO: Test execution phase: call
+01/26/2026 11:21:19 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:21:19 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:21:19 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-12345-admin123-invalid.png
+01/26/2026 11:21:20 PM: INFO: Screenshot captured successfully
+01/26/2026 11:21:20 PM: INFO: Test PASSED
+01/26/2026 11:21:20 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:21:20 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:21:20 PM: INFO: Closing browser
+01/26/2026 11:21:20 PM: INFO: Browser closed successfully
+01/26/2026 11:21:20 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-12345-admin123-invalid]
+01/26/2026 11:21:20 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:21:20 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:21:20 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:21:20 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:21:21 PM: INFO: Browser started successfully
+01/26/2026 11:21:21 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:21:27 PM: INFO: Navigation completed successfully
+01/26/2026 11:21:27 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-admin123-invalid]
+01/26/2026 11:21:27 PM: INFO: Attempting to login with username: @@@@@ and password: admin123
+01/26/2026 11:21:28 PM: INFO: Entering username
+01/26/2026 11:21:28 PM: INFO: Entering password
+01/26/2026 11:21:30 PM: INFO: Click on login button
+01/26/2026 11:21:30 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:21:31 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-admin123-invalid]
+01/26/2026 11:21:31 PM: INFO: Test execution phase: call
+01/26/2026 11:21:31 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:21:31 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:21:31 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin123-invalid.png
+01/26/2026 11:21:31 PM: INFO: Screenshot captured successfully
+01/26/2026 11:21:31 PM: INFO: Test PASSED
+01/26/2026 11:21:31 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:21:31 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:21:31 PM: INFO: Closing browser
+01/26/2026 11:21:31 PM: INFO: Browser closed successfully
+01/26/2026 11:21:31 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-admin123-invalid]
+01/26/2026 11:21:31 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:21:31 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:21:31 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:21:31 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:21:33 PM: INFO: Browser started successfully
+01/26/2026 11:21:33 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:21:43 PM: INFO: Navigation completed successfully
+01/26/2026 11:21:43 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-*****-invalid]
+01/26/2026 11:21:43 PM: INFO: Attempting to login with username: @@@@@ and password: *****
+01/26/2026 11:21:44 PM: INFO: Entering username
+01/26/2026 11:21:44 PM: INFO: Entering password
+01/26/2026 11:21:46 PM: INFO: Click on login button
+01/26/2026 11:21:46 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:21:47 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-*****-invalid]
+01/26/2026 11:21:47 PM: INFO: Test execution phase: call
+01/26/2026 11:21:47 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:21:47 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:21:47 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-invalid.png
+01/26/2026 11:21:47 PM: INFO: Screenshot captured successfully
+01/26/2026 11:21:47 PM: INFO: Test PASSED
+01/26/2026 11:21:47 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:21:47 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:21:47 PM: INFO: Closing browser
+01/26/2026 11:21:47 PM: INFO: Browser closed successfully
+01/26/2026 11:21:47 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-@@@@@-*****-invalid]
+01/26/2026 11:21:47 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:21:47 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:21:47 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:21:47 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:21:48 PM: INFO: Browser started successfully
+01/26/2026 11:21:48 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:22:13 PM: INFO: Navigation completed successfully
+01/26/2026 11:22:13 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-AdminAdmin-admin123-invalid]
+01/26/2026 11:22:13 PM: INFO: Attempting to login with username: AdminAdmin and password: admin123
+01/26/2026 11:22:20 PM: INFO: Entering username
+01/26/2026 11:22:20 PM: INFO: Entering password
+01/26/2026 11:22:22 PM: INFO: Click on login button
+01/26/2026 11:22:22 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:22:24 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-AdminAdmin-admin123-invalid]
+01/26/2026 11:22:24 PM: INFO: Test execution phase: call
+01/26/2026 11:22:24 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:22:24 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:22:24 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-adminadmin-admin123-invalid.png
+01/26/2026 11:22:24 PM: INFO: Screenshot captured successfully
+01/26/2026 11:22:24 PM: INFO: Test PASSED
+01/26/2026 11:22:24 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:22:24 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:22:24 PM: INFO: Closing browser
+01/26/2026 11:22:24 PM: INFO: Browser closed successfully
+01/26/2026 11:22:24 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-AdminAdmin-admin123-invalid]
+01/26/2026 11:22:24 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:22:24 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:22:24 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:22:24 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:22:25 PM: INFO: Browser started successfully
+01/26/2026 11:22:25 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:22:31 PM: INFO: Navigation completed successfully
+01/26/2026 11:22:31 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium--admin123-invalid]
+01/26/2026 11:22:31 PM: INFO: Attempting to login with username:  and password: admin123
+01/26/2026 11:22:32 PM: INFO: Entering username
+01/26/2026 11:22:32 PM: INFO: Entering password
+01/26/2026 11:22:32 PM: INFO: Click on login button
+01/26/2026 11:22:32 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:22:37 PM: INFO: Getting validation message, Required 
+01/26/2026 11:22:37 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium--admin123-invalid]
+01/26/2026 11:22:37 PM: INFO: Test execution phase: call
+01/26/2026 11:22:37 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:22:37 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:22:37 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-admin123-invalid.png
+01/26/2026 11:22:37 PM: INFO: Screenshot captured successfully
+01/26/2026 11:22:37 PM: INFO: Test PASSED
+01/26/2026 11:22:37 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:22:37 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:22:37 PM: INFO: Closing browser
+01/26/2026 11:22:37 PM: INFO: Browser closed successfully
+01/26/2026 11:22:37 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium--admin123-invalid]
+01/26/2026 11:22:37 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:22:37 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:22:37 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:22:37 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:22:39 PM: INFO: Browser started successfully
+01/26/2026 11:22:39 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:22:48 PM: INFO: Navigation completed successfully
+01/26/2026 11:22:48 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium---invalid]
+01/26/2026 11:22:48 PM: INFO: Attempting to login with username:  and password: 
+01/26/2026 11:22:50 PM: INFO: Entering username
+01/26/2026 11:22:50 PM: INFO: Entering password
+01/26/2026 11:22:50 PM: INFO: Click on login button
+01/26/2026 11:22:50 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:22:55 PM: INFO: Getting validation message, Required 
+01/26/2026 11:22:55 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium---invalid]
+01/26/2026 11:22:55 PM: INFO: Test execution phase: call
+01/26/2026 11:22:55 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:22:55 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:22:55 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-invalid.png
+01/26/2026 11:22:55 PM: INFO: Screenshot captured successfully
+01/26/2026 11:22:55 PM: INFO: Test PASSED
+01/26/2026 11:22:55 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:22:55 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:22:55 PM: INFO: Closing browser
+01/26/2026 11:22:55 PM: INFO: Browser closed successfully
+01/26/2026 11:22:55 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium---invalid]
+01/26/2026 11:22:55 PM: INFO: Starting browser setup with browser type: chromium
+01/26/2026 11:22:55 PM: INFO: Configuration loaded from config\environments\dev.yaml
+01/26/2026 11:22:55 PM: INFO: DriverManager initialized for chromium
+01/26/2026 11:22:55 PM: DEBUG: Using proactor: IocpProactor
+01/26/2026 11:22:56 PM: INFO: Browser started successfully
+01/26/2026 11:22:56 PM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/26/2026 11:23:02 PM: INFO: Navigation completed successfully
+01/26/2026 11:23:02 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Adm!n-admin123-invalid]
+01/26/2026 11:23:02 PM: INFO: Attempting to login with username: Adm!n and password: admin123
+01/26/2026 11:23:03 PM: INFO: Entering username
+01/26/2026 11:23:03 PM: INFO: Entering password
+01/26/2026 11:23:04 PM: INFO: Click on login button
+01/26/2026 11:23:04 PM: INFO: Getting error message, Invalid credentials
+01/26/2026 11:23:05 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Adm!n-admin123-invalid]
+01/26/2026 11:23:05 PM: INFO: Test execution phase: call
+01/26/2026 11:23:05 PM: INFO: Proceeding with screenshot capture
+01/26/2026 11:23:05 PM: INFO: Screenshot directory created at reports\screenshots
+01/26/2026 11:23:05 PM: INFO: Screenshot filename generated: tests-e2e-test-login-py-testlogin-test-login-chromium-adm-n-admin123-invalid.png
+01/26/2026 11:23:06 PM: INFO: Screenshot captured successfully
+01/26/2026 11:23:06 PM: INFO: Test PASSED
+01/26/2026 11:23:06 PM: INFO: Screenshot attached to pytest-html report: Pass
+01/26/2026 11:23:06 PM: INFO: Screenshot attached to Allure report with status: Pass
+01/26/2026 11:23:06 PM: INFO: Closing browser
+01/26/2026 11:23:06 PM: INFO: Browser closed successfully
+01/26/2026 11:23:06 PM: INFO: Test report generated for: tests/e2e/test_login.py::TestLogin::test_login[chromium-Adm!n-admin123-invalid]
+01/27/2026 12:40:39 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:40:39 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:40:39 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:40:39 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:40:40 AM: INFO: Browser started successfully
+01/27/2026 12:40:40 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:40:46 AM: INFO: Navigation completed successfully
+01/27/2026 12:40:46 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_navigate_to_admin_page[chromium]
+01/27/2026 12:40:46 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_navigate_to_admin_page[chromium]
+01/27/2026 12:40:46 AM: INFO: Test execution phase: call
+01/27/2026 12:40:46 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:40:46 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:40:46 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-navigate-to-admin-page-chromium.png
+01/27/2026 12:40:46 AM: INFO: Screenshot captured successfully
+01/27/2026 12:40:46 AM: WARNING: Test FAILED
+01/27/2026 12:40:46 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:40:46 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:40:46 AM: INFO: Closing browser
+01/27/2026 12:40:46 AM: INFO: Browser closed successfully
+01/27/2026 12:40:46 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_navigate_to_admin_page[chromium]
+01/27/2026 12:40:46 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:40:46 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:40:46 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:40:46 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:40:48 AM: INFO: Browser started successfully
+01/27/2026 12:40:48 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:40:55 AM: INFO: Navigation completed successfully
+01/27/2026 12:40:55 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:40:55 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:40:55 AM: INFO: Test execution phase: call
+01/27/2026 12:40:55 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:40:55 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:40:55 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:40:55 AM: INFO: Screenshot captured successfully
+01/27/2026 12:40:55 AM: WARNING: Test FAILED
+01/27/2026 12:40:55 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:40:55 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:40:55 AM: INFO: Closing browser
+01/27/2026 12:40:55 AM: INFO: Browser closed successfully
+01/27/2026 12:40:55 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:45:46 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:45:46 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:45:46 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:45:46 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:45:47 AM: INFO: Browser started successfully
+01/27/2026 12:45:47 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:45:53 AM: INFO: Navigation completed successfully
+01/27/2026 12:45:53 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:45:53 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:45:53 AM: INFO: Test execution phase: call
+01/27/2026 12:45:53 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:45:53 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:45:53 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:45:53 AM: INFO: Screenshot captured successfully
+01/27/2026 12:45:53 AM: WARNING: Test FAILED
+01/27/2026 12:45:53 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:45:53 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:45:53 AM: INFO: Closing browser
+01/27/2026 12:45:53 AM: INFO: Browser closed successfully
+01/27/2026 12:45:53 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:46:46 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:46:46 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:46:46 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:46:46 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:46:47 AM: INFO: Browser started successfully
+01/27/2026 12:46:47 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:46:51 AM: INFO: Navigation completed successfully
+01/27/2026 12:46:51 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:46:51 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:46:51 AM: INFO: Test execution phase: call
+01/27/2026 12:46:51 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:46:51 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:46:51 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:46:51 AM: INFO: Screenshot captured successfully
+01/27/2026 12:46:51 AM: WARNING: Test FAILED
+01/27/2026 12:46:51 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:46:51 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:46:51 AM: INFO: Closing browser
+01/27/2026 12:46:51 AM: INFO: Browser closed successfully
+01/27/2026 12:46:51 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:47:34 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:47:34 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:47:34 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:47:34 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:47:34 AM: INFO: Browser started successfully
+01/27/2026 12:47:34 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:47:39 AM: INFO: Navigation completed successfully
+01/27/2026 12:47:39 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:47:39 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:47:40 AM: INFO: Entering username
+01/27/2026 12:47:40 AM: INFO: Entering password
+01/27/2026 12:47:42 AM: INFO: Click on login button
+01/27/2026 12:47:43 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:47:43 AM: INFO: Test execution phase: call
+01/27/2026 12:47:43 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:47:43 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:47:43 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:47:43 AM: INFO: Screenshot captured successfully
+01/27/2026 12:47:43 AM: WARNING: Test FAILED
+01/27/2026 12:47:43 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:47:43 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:47:43 AM: INFO: Closing browser
+01/27/2026 12:47:44 AM: INFO: Browser closed successfully
+01/27/2026 12:47:44 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:48:47 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:48:47 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:48:47 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:48:47 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:48:48 AM: INFO: Browser started successfully
+01/27/2026 12:48:48 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:48:55 AM: INFO: Navigation completed successfully
+01/27/2026 12:48:55 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:48:55 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:48:56 AM: INFO: Entering username
+01/27/2026 12:48:56 AM: INFO: Entering password
+01/27/2026 12:49:00 AM: INFO: Click on login button
+01/27/2026 12:49:08 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:49:08 AM: INFO: Test execution phase: call
+01/27/2026 12:49:08 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:49:08 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:49:08 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:49:08 AM: INFO: Screenshot captured successfully
+01/27/2026 12:49:08 AM: WARNING: Test FAILED
+01/27/2026 12:49:08 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:49:08 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:49:08 AM: INFO: Closing browser
+01/27/2026 12:49:09 AM: INFO: Browser closed successfully
+01/27/2026 12:49:09 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:50:12 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:50:12 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:50:12 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:50:12 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:50:12 AM: INFO: Browser started successfully
+01/27/2026 12:50:12 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:50:17 AM: INFO: Navigation completed successfully
+01/27/2026 12:50:17 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:50:17 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:50:18 AM: INFO: Entering username
+01/27/2026 12:50:18 AM: INFO: Entering password
+01/27/2026 12:50:19 AM: INFO: Click on login button
+01/27/2026 12:50:23 AM: INFO: Selected user role at index: 1
+01/27/2026 12:50:28 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:50:28 AM: INFO: Test execution phase: call
+01/27/2026 12:50:28 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:50:28 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:50:28 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:50:28 AM: INFO: Screenshot captured successfully
+01/27/2026 12:50:28 AM: WARNING: Test FAILED
+01/27/2026 12:50:28 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:50:28 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:50:28 AM: INFO: Closing browser
+01/27/2026 12:50:29 AM: INFO: Browser closed successfully
+01/27/2026 12:50:29 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:51:51 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:51:51 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:51:51 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:51:51 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:51:52 AM: INFO: Browser started successfully
+01/27/2026 12:51:52 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:51:59 AM: INFO: Navigation completed successfully
+01/27/2026 12:51:59 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:51:59 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:51:59 AM: INFO: Entering username
+01/27/2026 12:52:00 AM: INFO: Entering password
+01/27/2026 12:52:01 AM: INFO: Click on login button
+01/27/2026 12:52:05 AM: INFO: Entered username for search: Admin
+01/27/2026 12:52:05 AM: INFO: Selected user role at index: 1
+01/27/2026 12:52:05 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:52:05 AM: INFO: Test execution phase: call
+01/27/2026 12:52:05 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:52:05 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:52:05 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:52:05 AM: INFO: Screenshot captured successfully
+01/27/2026 12:52:05 AM: INFO: Test PASSED
+01/27/2026 12:52:05 AM: INFO: Screenshot attached to pytest-html report: Pass
+01/27/2026 12:52:05 AM: INFO: Screenshot attached to Allure report with status: Pass
+01/27/2026 12:52:05 AM: INFO: Closing browser
+01/27/2026 12:52:05 AM: INFO: Browser closed successfully
+01/27/2026 12:52:05 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:55:08 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:55:08 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:55:08 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:55:08 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:55:09 AM: INFO: Browser started successfully
+01/27/2026 12:55:09 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:55:14 AM: INFO: Navigation completed successfully
+01/27/2026 12:55:14 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:55:14 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:55:15 AM: INFO: Entering username
+01/27/2026 12:55:15 AM: INFO: Entering password
+01/27/2026 12:55:17 AM: INFO: Click on login button
+01/27/2026 12:55:21 AM: INFO: Selected user role at index: 1
+01/27/2026 12:55:21 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:55:21 AM: INFO: Test execution phase: call
+01/27/2026 12:55:21 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:55:21 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:55:21 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:55:21 AM: INFO: Screenshot captured successfully
+01/27/2026 12:55:21 AM: WARNING: Test FAILED
+01/27/2026 12:55:21 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 12:55:21 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 12:55:21 AM: INFO: Closing browser
+01/27/2026 12:55:21 AM: INFO: Browser closed successfully
+01/27/2026 12:55:21 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:57:02 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 12:57:02 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 12:57:02 AM: INFO: DriverManager initialized for chromium
+01/27/2026 12:57:02 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 12:57:03 AM: INFO: Browser started successfully
+01/27/2026 12:57:03 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 12:57:08 AM: INFO: Navigation completed successfully
+01/27/2026 12:57:08 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:57:08 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 12:57:09 AM: INFO: Entering username
+01/27/2026 12:57:09 AM: INFO: Entering password
+01/27/2026 12:57:12 AM: INFO: Click on login button
+01/27/2026 12:57:18 AM: INFO: Selected user role at index: 1
+01/27/2026 12:57:18 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]
+01/27/2026 12:57:18 AM: INFO: Test execution phase: call
+01/27/2026 12:57:18 AM: INFO: Proceeding with screenshot capture
+01/27/2026 12:57:18 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 12:57:18 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-admin-page-search-user-chromium.png
+01/27/2026 12:57:19 AM: INFO: Screenshot captured successfully
+01/27/2026 12:57:19 AM: INFO: Test PASSED
+01/27/2026 12:57:19 AM: INFO: Screenshot attached to pytest-html report: Pass
+01/27/2026 12:57:19 AM: INFO: Screenshot attached to Allure report with status: Pass
+01/27/2026 12:57:19 AM: INFO: Closing browser
+01/27/2026 12:57:19 AM: INFO: Browser closed successfully
+01/27/2026 12:57:19 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_admin_page_search_user[chromium]

@@ -1,0 +1,5 @@
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:test_login.py:14 Navigate to login page
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:test_login.py:16 Navigate to dashboard page
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:19 Attempting to login with username: Admin
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:LoginPage.py:26 Login button clicked
+[32mINFO    [0m test_login[chromium-Admin-admin123-valid]:test_login.py:21 Valid login
