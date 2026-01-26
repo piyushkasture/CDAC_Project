@@ -44,6 +44,7 @@ class DashboardPage(BasePage):
 
     # Navigation actions
     def go_to_admin(self):
+<<<<<<< Updated upstream
         self.admin_menu.click()
 
     def go_to_pim(self):
@@ -54,3 +55,19 @@ class DashboardPage(BasePage):
 
     def go_to_recruitment(self):
         self.recruitment_menu.click()
+=======
+        self.wait_for_element(self.AdminMenu)
+        self.page.locator(self.AdminMenu).click()
+
+    def go_to_pim(self):
+        self.page.locator(self.PimMenu).click()
+
+    def go_to_leave(self):
+        self.wait_for_element(self.LeaveMenu)
+        self.page.locator(self.LeaveMenu).click()
+
+    def go_to_recruitment(self):
+        self.wait_for_element(self.RecruitmentMenu)
+        self.page.locator(self.RecruitmentMenu).click()
+        self.click(self.RecruitmentMenu)
+>>>>>>> Stashed changes
