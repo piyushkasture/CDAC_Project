@@ -19,11 +19,10 @@ class TestAdmin(BaseTest):
         # Initialize AdminUserPage without logger parameter
         admin_user = AdminUserPage(page)
         # admin_user.wait_for_users_page()
-        admin_user.select_user_role("ESS")
-        page.click("button:has-text('Search')")
-
+        admin_user.select_user_role("Admin")
+        admin_user.search_button.click()
         admin_user.wait_for_search_results()
-        # Verify that search results table is visible
-        rows = page.locator("div.oxd-table-body div.oxd-table-card")
+        # Verify
+        rows = admin_user.results_rows
         assert rows.count() > 1
 

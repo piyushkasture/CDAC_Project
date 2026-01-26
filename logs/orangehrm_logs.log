@@ -1322,3 +1322,51 @@
 01/27/2026 02:30:17 AM: INFO: Closing browser
 01/27/2026 02:30:17 AM: INFO: Browser closed successfully
 01/27/2026 02:30:17 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:51:47 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 02:51:47 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 02:51:47 AM: INFO: DriverManager initialized for chromium
+01/27/2026 02:51:47 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 02:51:48 AM: INFO: Browser started successfully
+01/27/2026 02:51:48 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 02:51:53 AM: INFO: Navigation completed successfully
+01/27/2026 02:51:53 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:51:53 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 02:51:54 AM: INFO: Entering username
+01/27/2026 02:51:54 AM: INFO: Entering password
+01/27/2026 02:51:56 AM: INFO: Click on login button
+01/27/2026 02:52:00 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:52:00 AM: INFO: Test execution phase: call
+01/27/2026 02:52:00 AM: INFO: Proceeding with screenshot capture
+01/27/2026 02:52:00 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 02:52:00 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-search-user-by-admin-role-chromium.png
+01/27/2026 02:52:01 AM: INFO: Screenshot captured successfully
+01/27/2026 02:52:01 AM: WARNING: Test FAILED
+01/27/2026 02:52:01 AM: INFO: Screenshot attached to pytest-html report: Failure
+01/27/2026 02:52:01 AM: INFO: Screenshot attached to Allure report with status: Failure
+01/27/2026 02:52:01 AM: INFO: Closing browser
+01/27/2026 02:52:01 AM: INFO: Browser closed successfully
+01/27/2026 02:52:01 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:52:22 AM: INFO: Starting browser setup with browser type: chromium
+01/27/2026 02:52:22 AM: INFO: Configuration loaded from config\environments\dev.yaml
+01/27/2026 02:52:22 AM: INFO: DriverManager initialized for chromium
+01/27/2026 02:52:22 AM: DEBUG: Using proactor: IocpProactor
+01/27/2026 02:52:24 AM: INFO: Browser started successfully
+01/27/2026 02:52:24 AM: INFO: Navigating to url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+01/27/2026 02:52:29 AM: INFO: Navigation completed successfully
+01/27/2026 02:52:29 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:52:29 AM: INFO: Attempting to login with username: Admin and password: admin123
+01/27/2026 02:52:30 AM: INFO: Entering username
+01/27/2026 02:52:30 AM: INFO: Entering password
+01/27/2026 02:52:30 AM: INFO: Click on login button
+01/27/2026 02:52:36 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
+01/27/2026 02:52:36 AM: INFO: Test execution phase: call
+01/27/2026 02:52:36 AM: INFO: Proceeding with screenshot capture
+01/27/2026 02:52:36 AM: INFO: Screenshot directory created at reports\screenshots
+01/27/2026 02:52:36 AM: INFO: Screenshot filename generated: tests-e2e-test-admin-py-testadmin-test-search-user-by-admin-role-chromium.png
+01/27/2026 02:52:36 AM: INFO: Screenshot captured successfully
+01/27/2026 02:52:36 AM: INFO: Test PASSED
+01/27/2026 02:52:36 AM: INFO: Screenshot attached to pytest-html report: Pass
+01/27/2026 02:52:36 AM: INFO: Screenshot attached to Allure report with status: Pass
+01/27/2026 02:52:36 AM: INFO: Closing browser
+01/27/2026 02:52:36 AM: INFO: Browser closed successfully
+01/27/2026 02:52:36 AM: INFO: Test report generated for: tests/e2e/test_admin.py::TestAdmin::test_search_user_by_admin_role[chromium]
