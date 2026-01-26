@@ -9,21 +9,20 @@ from utils.CustomLogger import get_logger
 
 @pytest.fixture
 def logger(request):
-    # Initialize logger for the test with the test name for better tracking
+    # Initialize logger with test name 
     return get_logger(request.node.name)
 
-# Browser + Page Setup
-
+# Browser + Page Setup Fixture
 @pytest.fixture(scope="function", params=["chromium"])
 def page(request, logger):
-    # Get the browser type from parametrized test
+    # Get the browser type
     browser = request.param
     
     # Create logger for browser setup
     logger = get_logger("browser_setup")
     logger.info(f"Starting browser setup with browser type: {browser}")
 
-    # Load configuration from YAML file for the current environment
+    # Load configuration from YAML file
     config_path = os.path.join("config", "environments", "dev.yaml")
     with open(config_path) as f:
         config = yaml.safe_load(f)
@@ -38,7 +37,6 @@ def page(request, logger):
 
     # Set global timeout and navigate to the application URL
     page.set_default_timeout(60000)
-    logger.info(f"Default timeout set to 60000ms")
     
     logger.info(f"Navigating to url: {config['url']}")
 
@@ -48,10 +46,10 @@ def page(request, logger):
     # Yield page to test, cleanup happens after test completes
     yield page
 
-    # Browser close happens AFTER screenshots
-    logger.info(f"Closing browser and cleaning up resources")
+    # Browser close happens after screenshots
+    logger.info(f"Closing browser")
     driver.stop()
-    logger.info(f"Browser cleanup completed")
+    logger.info(f"Browser closed successfully")
 
 
 # Screenshot + Reporting Hook
@@ -68,31 +66,31 @@ def pytest_runtest_makereport(item, call):
     
     report_logger.info(f"Test report generated for: {item.nodeid}")
 
-    # Only capture screenshots after test execution (not during setup/teardown)
+    # Only capture screenshots after test execution
     if report.when == "call":
         report_logger.info(f"Test execution phase: {report.when}")
         
         # Ensure Playwright page is available
         if hasattr(item, "funcargs") and "page" in item.funcargs:
             page = item.funcargs["page"]
-            report_logger.info(f"Page object found, proceeding with screenshot capture")
+            report_logger.info(f"Proceeding with screenshot capture")
 
             try:
                 # Create screenshots directory if it doesn't exist
                 screenshot_dir = Path("reports/screenshots")
                 screenshot_dir.mkdir(parents=True, exist_ok=True)
-                report_logger.info(f"Screenshot directory created/verified at {screenshot_dir}")
+                report_logger.info(f"Screenshot directory created at {screenshot_dir}")
 
-                # Generate screenshot filename based on test name
+                # Generate screenshot filename
                 file_name = f"{slugify(item.nodeid)}.png"
                 screen_file = screenshot_dir / file_name
                 report_logger.info(f"Screenshot filename generated: {file_name}")
 
-                # Take screenshot of the current page state
+                # Take screenshot
                 page.screenshot(path=str(screen_file))
                 report_logger.info(f"Screenshot captured successfully")
 
-                # Determine test status for screenshot naming
+                # Test status for screenshot naming
                 if report.passed:
                     status = "Pass"
                     report_logger.info(f"Test PASSED")
@@ -109,9 +107,9 @@ def pytest_runtest_makereport(item, call):
                 # Attach screenshot to pytest-html report
                 if pytest_html:
                     extra.append(pytest_html.extras.png(str(screen_file)))
-                    report_logger.info(f"Screenshot attached to pytest-html report")
+                    report_logger.info(f"Screenshot attached to pytest-html report: {status}")
 
-                # Attach screenshot to Allure report for better visibility
+                # Attach screenshot to Allure report
                 allure.attach.file(
                     str(screen_file),
                     name=f"{status} Screenshot",
@@ -120,12 +118,8 @@ def pytest_runtest_makereport(item, call):
                 report_logger.info(f"Screenshot attached to Allure report with status: {status}")
 
             except Exception as e:
-                # Log any errors that occur during screenshot capture
+                # Any errors that occur during screenshot capture
                 report_logger.error(f"Screenshot capture failed: {str(e)}")
-                print(f"Screenshot capture failed: {e}")
+
         else:
             report_logger.warning(f"Page object not found in test fixtures")
-
-        # Attach all collected extras to the report
-        report.extra = extra
-        report_logger.info(f"Report finalized with {len(extra)} extra attachments")

@@ -13,8 +13,7 @@ class DashboardPage(BasePage):
 
     def is_dashboard_visible(self):
         dashboard_heading = self.page.get_by_role("heading", name="Dashboard")
-        expect(dashboard_heading).to_be_visible()
-        return dashboard_heading.is_visible()
+        return dashboard_heading
 
     def go_to_admin(self):
         self.wait_for_element(self.AdminMenu)

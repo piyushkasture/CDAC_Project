@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5fa9edb-a958-4ce6-9479-5208f955b337" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/CustomLogger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/DashboardPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/DashboardPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/assignment.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/assignment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium-12345.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium-12345.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium-admin-admin123.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium-admin-admin123.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/screenshots/tests-e2e-test-login-py-testlogin-test-login-chromium.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testData/login_test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/testData/login_test_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/e2e/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/CustomLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/CustomLogger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/DataReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/DataReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/DriverManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/DriverManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/base_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
