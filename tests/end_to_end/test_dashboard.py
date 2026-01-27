@@ -7,6 +7,7 @@ from utils.base_test import BaseTest
 from utils.DataReader import data
 
 
+@pytest.mark.order(0)
 class TestDashboard(BaseTest):
 
     @pytest.fixture(autouse=True)
@@ -47,17 +48,17 @@ class TestDashboard(BaseTest):
         dashboard = DashboardPage(page)
         expect(dashboard.get_profile_icon()).to_be_visible()
 
-    #Verify Dashboard widgets section is displayed
+    # Verify Dashboard widgets section is displayed
     def test_widgets_section_visible(self, page):
         dashboard = DashboardPage(page)
         expect(dashboard.get_widgets().first).to_be_visible()
 
-    #Verify at least one widget is displayed
+    # Verify at least one widget is displayed
     def test_at_least_one_widget_present(self, page):
         dashboard = DashboardPage(page)
         assert dashboard.get_widgets().count() > 0
 
-    #Verify Dashboard page behavior on refresh
+    # Verify Dashboard page behavior on refresh
     def test_dashboard_behavior_on_refresh(self, page):
         dashboard = DashboardPage(page)
         page.reload()
@@ -69,12 +70,11 @@ class TestDashboard(BaseTest):
         page.reload()
         expect(dashboard.get_error_message()).not_to_be_visible()
 
-    #Verify Dashboard page loads within acceptable time
+    # Verify Dashboard page loads within acceptable time
     def test_dashboard_load_time(self, page):
         start_time = page.evaluate("Date.now()")
         page.reload()
         end_time = page.evaluate("Date.now()")
-
         assert (end_time - start_time) < 5000
 
     # Verify Dashboard elements are visible after refresh
