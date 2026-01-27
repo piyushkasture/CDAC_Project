@@ -1,0 +1,3 @@
+[32mINFO    [0m test_admin_page_navigation[chromium]:test_admin.py:108 Admin page elements are visible and accessible
+[32mINFO    [0m browser_setup:conftest.py:50 Closing browser
+[32mINFO    [0m browser_setup:conftest.py:52 Browser closed successfully
