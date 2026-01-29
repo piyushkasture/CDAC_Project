@@ -44,7 +44,7 @@ class TestDashboard(BaseTest):
         expect(dashboard.is_dashboard_visible()).to_be_visible()
 
     # Verify profile icon visibility on Dashboard
-    def test_DASH_005_profile_icon_visible(self, page):
+    def test_profile_icon_visible(self, page):
         dashboard = DashboardPage(page)
         expect(dashboard.get_profile_icon()).to_be_visible()
 
