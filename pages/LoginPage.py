@@ -6,8 +6,8 @@ class LoginPage(BasePage):
     def __init__(self, page: Page, logger=None):
         # Initialize LoginPage with page object and logger.
 
-        super().__init__(page)
-        self.logger = logger
+        super().__init__(page,logger)
+        # self.logger = logger
 
         # Locators for login page elements
         self.username_input = page.get_by_placeholder("Username") # Username input field
@@ -29,9 +29,13 @@ class LoginPage(BasePage):
         self.password_input.fill(password)
         self.logger.info("Entering password")
 
-        # Click login button
+        # Click login button and wait for navigation
         self.login_button.click()
         self.logger.info("Click on login button")
+        
+        # # Wait for either successful navigation or error message to appear
+        # self.page.wait_for_load_state("networkidle")
+        # self.logger.info("Page load completed")
 
     def get_error_message(self):
         # Get the error message element displayed after failed login attempt.

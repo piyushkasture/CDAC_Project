@@ -1,23 +1,27 @@
 from pathlib import Path
+import allure
 import os
 import yaml
 import pytest
-import allure
 from slugify import slugify
-from utils.DriverManager import DriverManager
 from utils.CustomLogger import get_logger
+from utils.DriverManager import DriverManager
+from pages.LoginPage import LoginPage
+from pages.DashboardPage import DashboardPage
+from utils.DataReader import get_valid_login
+
 
 @pytest.fixture
 def logger(request):
-    # Initialize logger with test name 
+    # Initialize logger with test name
     return get_logger(request.node.name)
 
 # Browser + Page Setup Fixture
-@pytest.fixture(scope="function", params=["chromium"])
-def page(request, logger):
+@pytest.fixture(scope="session", params=["chromium"])
+def page(request):
     # Get the browser type
     browser = request.param
-    
+
     # Create logger for browser setup
     logger = get_logger("browser_setup")
     logger.info(f"Starting browser setup with browser type: {browser}")
@@ -31,17 +35,31 @@ def page(request, logger):
     # Initialize the browser driver with specified browser type
     driver = DriverManager(browser_name=browser, headless=False)
     logger.info(f"DriverManager initialized for {browser}")
-    
+
     page = driver.start()
     logger.info(f"Browser started successfully")
 
     # Set global timeout and navigate to the application URL
     page.set_default_timeout(60000)
-    
+
     logger.info(f"Navigating to url: {config['url']}")
 
-    page.goto(config["url"], wait_until="load")
+    page.goto(config["url"])
     logger.info(f"Navigation completed successfully")
+
+    # Once login
+    username, password = get_valid_login()
+    login = LoginPage(page)
+    login.login(username, password)
+
+
+    # #LOGIN ONCE
+    # login = LoginPage(page)
+    # login.login("Admin", "admin123")
+    #
+    #
+    # dashboard = DashboardPage(page)
+    # dashboard.is_dashboard_visible()
 
     # Yield page to test, cleanup happens after test completes
     yield page
@@ -52,24 +70,37 @@ def page(request, logger):
     logger.info(f"Browser closed successfully")
 
 
+@pytest.fixture(scope="class")
+def dashboard_page(page):
+    return page
+
+
+@pytest.fixture(scope="class")
+def admin_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_admin()
+    return page
+
+
+
 # Screenshot + Reporting Hook
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     # Create logger for reporting
     report_logger = get_logger("test_report")
-    
+
     # Get the HTML plugin for pytest to attach screenshots
     pytest_html = item.config.pluginmanager.getplugin("html")
     outcome = yield
     report = outcome.get_result()
     extra = getattr(report, "extra", [])
-    
+
     report_logger.info(f"Test report generated for: {item.nodeid}")
 
     # Only capture screenshots after test execution
     if report.when == "call":
         report_logger.info(f"Test execution phase: {report.when}")
-        
+
         # Ensure Playwright page is available
         if hasattr(item, "funcargs") and "page" in item.funcargs:
             page = item.funcargs["page"]

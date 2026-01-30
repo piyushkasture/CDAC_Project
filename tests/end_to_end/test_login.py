@@ -7,8 +7,8 @@ from utils.DataReader import data
 
 # Test class for login functionality validation
 class TestLogin(BaseTest):
-    @pytest.mark.parametrize("username,password,validity", data())
 
+    @pytest.mark.parametrize("username,password,validity", data())
     def test_login(self, page, username, password, validity,logger):
         # Initialize page objects for login and dashboard pages
         login = LoginPage(page, logger)
@@ -27,7 +27,7 @@ class TestLogin(BaseTest):
             try:
                 # Check for invalid credentials error message
                 logger.info("Getting error message, Invalid credentials")
-                expect(login.get_error_message()).to_be_visible()
+                expect(login.get_error_message().first).to_be_visible()
             except AssertionError:
                 # Check for required field validation message
                 logger.info("Getting validation message, Required ")

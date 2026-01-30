@@ -1,0 +1,3 @@
+[32mINFO    [0m test_01_admin_page_loads_successfully[chromium]:test_admin.py:35 TC01 PASSED: Admin page loaded successfully with all elements visible
+[32mINFO    [0m browser_setup:conftest.py:87 Closing browser
+[32mINFO    [0m browser_setup:conftest.py:89 Browser closed successfully

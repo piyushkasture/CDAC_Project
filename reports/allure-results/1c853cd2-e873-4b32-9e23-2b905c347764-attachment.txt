@@ -1,0 +1,2 @@
+[32mINFO    [0m browser_setup:conftest.py:52 Closing browser
+[32mINFO    [0m browser_setup:conftest.py:54 Browser closed successfully
