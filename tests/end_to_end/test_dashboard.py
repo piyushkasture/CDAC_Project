@@ -8,7 +8,7 @@ from utils.DataReader import data
 
 
 
-@pytest.mark.order(1)
+# @pytest.mark.order(1)
 class TestDashboard(BaseTest):
 
     # Verify Dashboard page loads after successful login

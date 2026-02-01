@@ -8,13 +8,29 @@ from utils.CustomLogger import get_logger
 from utils.DriverManager import DriverManager
 from pages.LoginPage import LoginPage
 from pages.DashboardPage import DashboardPage
-from utils.DataReader import get_valid_login
+from utils.DataReader import get_valid_login, my_info_data_read
 
 
 @pytest.fixture
 def logger(request):
     # Initialize logger with test name
     return get_logger(request.node.name)
+
+
+@pytest.fixture
+def login_page():
+    from utils.DriverManager import DriverManager
+
+    driver = DriverManager(browser_name="chromium", headless=False)
+    page = driver.start()
+
+    page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+
+    yield page
+
+    driver.stop()
+
+
 
 # Browser + Page Setup Fixture
 @pytest.fixture(scope="session", params=["chromium"])
@@ -70,6 +86,10 @@ def page(request):
     logger.info(f"Browser closed successfully")
 
 
+@pytest.fixture
+def get_my_info_data():
+    return my_info_data_read()
+
 @pytest.fixture(scope="class")
 def dashboard_page(page):
     return page
@@ -81,7 +101,17 @@ def admin_page(page):
     dashboard.go_to_admin()
     return page
 
+@pytest.fixture(scope="class")
+def myinfo_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_myinfo()
+    return page
 
+@pytest.fixture(scope="class")
+def profile_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_profile()   # clicks profile picture
+    return page
 
 # Screenshot + Reporting Hook
 @pytest.hookimpl(hookwrapper=True)

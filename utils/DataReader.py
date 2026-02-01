@@ -23,3 +23,9 @@ def get_valid_login():
         json_data = json.load(file)
 
     return json_data["valid_admin"]["username"], json_data["valid_admin"]["password"]
+
+
+def my_info_data_read():
+    file_path = os.path.join("testdata", "my_info_test_data.json")
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)

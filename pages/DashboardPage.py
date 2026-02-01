@@ -29,6 +29,11 @@ class DashboardPage(BasePage):
         self.pim_menu = page.get_by_role("link", name="PIM")
         self.leave_menu = page.get_by_role("link", name="Leave")
         self.recruitment_menu = page.get_by_role("link", name="Recruitment")
+        self.myInfo_menu = page.get_by_role("link", name="My Info")
+        self.profile_button = (
+            self.page.get_by_role("banner")
+            .get_by_alt_text("profile picture")
+        )
 
     # Dashboard validations
     def is_dashboard_visible(self):
@@ -55,3 +60,9 @@ class DashboardPage(BasePage):
 
     def go_to_recruitment(self):
         self.recruitment_menu.click()
+
+    def go_to_myinfo(self):
+        self.myInfo_menu.click()
+
+    def go_to_profile(self):
+        self.profile_button.click()

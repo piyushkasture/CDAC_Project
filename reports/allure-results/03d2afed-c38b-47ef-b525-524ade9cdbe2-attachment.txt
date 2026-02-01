@@ -1,0 +1,2 @@
+INFO     browser_setup:conftest.py:75 Closing browser
+INFO     browser_setup:conftest.py:77 Browser closed successfully
