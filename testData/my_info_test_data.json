@@ -1,6 +1,51 @@
 {
-  "personal_positive":{
-    "data1": { "first": "Piyush", "last": "Kasture", "nick": "PK" },
-    "data2":  { "first": "Amit", "last": "Sharma", "nick": "AS" }
+  "personal": {
+    "data1": { "first": "Piyush", "middle": "Dilip", "last": "Kasture" },
+    "data2": { "first": "Amit", "middle": "Bandhu", "last": "Sharma" }
+  },
+  "contact": {
+    "mobile": "9876543210",
+    "email": "test@gmail.com",
+    "street1": "cdac panchavati"
+  },
+  "emergency_contact": {
+    "name": "One",
+    "relationship": "Brother",
+    "home_phone": "9123456789",
+    "edit_name": "Emergency Contact Updated",
+    "edit_relationship": "Sibling",
+    "edit_home_phone": "9988776655"
+  },
+  "dependent": {
+    "name": "Child One",
+    "edit_name": "Updated",
+    "dob": "2003-17-12"
+  },
+  "immigration": {
+    "number": "PASS123456",
+    "issued_date": "2020-01-15",
+    "expiry_date": "2030-01-15",
+    "eligible_status": "Yes",
+    "edit_number": "PASS123456-UPD"
+  },
+  "work_experience": {
+    "company": "CDAC",
+    "job_title": "QA Engineer",
+    "from_date": "2022-01-01",
+    "to_date": "2025-12-31",
+    "edit_company": "CDAC Acts"
+  },
+  "education": {
+    "institute": "CDAC Acts",
+    "year": "2020",
+    "edit_institute": "CDAC Acts Pune"
+  },
+  "skill": {
+    "years_exp": "5",
+    "edit_years_exp": "6"
+  },
+  "membership": {
+    "name": "British Computer Society (BCS)",
+    "amount": "1000"
   }
 }

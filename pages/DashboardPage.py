@@ -14,9 +14,7 @@ class DashboardPage(BasePage):
         self.dashboard_heading = page.get_by_role("heading", name="Dashboard")
 
         # User profile dropdown icon (top right)
-        self.profile_icon = page.get_by_role("button").filter(
-            has=page.locator("i.oxd-userdropdown-icon")
-        )
+        self.profile_icon = page.get_by_role("button").filter(has=page.locator("i.oxd-userdropdown-icon"))
 
         # Dashboard widgets
         self.widgets = page.locator("div.oxd-dashboard-widget")
@@ -30,10 +28,10 @@ class DashboardPage(BasePage):
         self.leave_menu = page.get_by_role("link", name="Leave")
         self.recruitment_menu = page.get_by_role("link", name="Recruitment")
         self.myInfo_menu = page.get_by_role("link", name="My Info")
-        self.profile_button = (
-            self.page.get_by_role("banner")
-            .get_by_alt_text("profile picture")
-        )
+        self.profile_button = (self.page.get_by_role("banner").get_by_alt_text("profile picture"))
+        self.directory_menu = page.get_by_role("link", name="Directory")
+        self.maintenance_menu = page.get_by_role("link", name="Maintenance")
+        self.buzz_menu = page.get_by_role("link", name="Buzz")
 
     # Dashboard validations
     def is_dashboard_visible(self):
@@ -66,3 +64,12 @@ class DashboardPage(BasePage):
 
     def go_to_profile(self):
         self.profile_button.click()
+
+    def go_to_directory(self):
+        self.directory_menu.click()
+
+    def go_to_maintenance(self):
+        self.maintenance_menu.click()
+
+    def go_to_buzz(self):
+        self.buzz_menu.click()

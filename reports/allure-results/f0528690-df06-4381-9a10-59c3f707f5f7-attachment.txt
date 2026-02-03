@@ -1,0 +1,13 @@
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:47 Opening tab: Personal Details
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:169 Updating personal: Piyush K Kasture
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:115 Clicking Save
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:111 Success toast visible
+INFO     test_personal_details_create_edit_delete[chromium]:test_my_info.py:28 Personal Details: first edit (create/update) passed
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:169 Updating personal: Amit K Sharma
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:115 Clicking Save
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:111 Success toast visible
+INFO     test_personal_details_create_edit_delete[chromium]:test_my_info.py:33 Personal Details: second edit passed
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:169 Updating personal: Piyush K Kasture
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:115 Clicking Save
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:111 Success toast visible
+INFO     test_personal_details_create_edit_delete[chromium]:test_my_info.py:37 Personal Details: create → edit flow passed

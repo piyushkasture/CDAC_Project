@@ -1,0 +1,2 @@
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:47 Opening tab: Personal Details
+INFO     test_personal_details_create_edit_delete[chromium]:MyInfoPage.py:169 Updating personal: Piyush K Kasture

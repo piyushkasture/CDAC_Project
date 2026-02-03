@@ -31,7 +31,6 @@ def login_page():
     driver.stop()
 
 
-
 # Browser + Page Setup Fixture
 @pytest.fixture(scope="session", params=["chromium"])
 def page(request):
@@ -112,6 +111,25 @@ def profile_page(page):
     dashboard = DashboardPage(page)
     dashboard.go_to_profile()   # clicks profile picture
     return page
+
+@pytest.fixture(scope="class")
+def directory_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_directory()   # clicks profile picture
+    return page
+
+@pytest.fixture(scope="class")
+def maintenance_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_maintenance()   # clicks profile picture
+    return page
+
+@pytest.fixture(scope="class")
+def buzz_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_buzz()   # clicks profile picture
+    return page
+
 
 # Screenshot + Reporting Hook
 @pytest.hookimpl(hookwrapper=True)

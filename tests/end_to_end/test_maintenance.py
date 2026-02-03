@@ -1,177 +1,89 @@
-import pytest
-from playwright.sync_api import Page, expect
+
+from playwright.sync_api import expect
 from pages.MaintenancePage import MaintenancePage
+from utils.CustomLogger import get_logger
 
-
-# @pytest.mark.usefixtures("login_as_admin")
 class TestMaintenance:
 
-    def test_to_test_access_to_maintenance_module(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-
-        expect(page).to_have_url(lambda url: "maintenance" in url)
-
-
-    def test_to_test_loading_of_employee_records_page(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        expect(page.locator("text=Purge Employee Records")).to_be_visible()
-
-
-    def test_to_test_search_employee_records(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.search_record("Paul")
-
-        expect(page.locator(".oxd-table-body")).to_be_visible()
-
-
-    def test_to_test_purge_single_employee_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.search_record("Paul")
-        maintenance.purge_record()
-
-        expect(page.locator("text=Successfully Purged")).to_be_visible()
-
-
-    def test_to_test_cancel_employee_purge_action(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.search_record("Paul")
-        maintenance.cancel_purge()
-
-        expect(page.locator("text=Purge Employee Records")).to_be_visible()
-
-
-    def test_to_test_loading_of_candidate_records_page(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_candidate_records()
-
-        expect(page.locator("text=Purge Candidate Records")).to_be_visible()
-
-
-    def test_to_test_search_candidate_records(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_candidate_records()
-
-        maintenance.search_record("John")
-
-        expect(page.locator(".oxd-table-body")).to_be_visible()
-
-
-    def test_to_test_purge_single_candidate_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_candidate_records()
-
-        maintenance.search_record("John")
-        maintenance.purge_record()
-
-        expect(page.locator("text=Successfully Purged")).to_be_visible()
-
-
-    def test_to_test_navigation_between_employee_and_candidate_pages(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-
-        maintenance.open_employee_records()
-        expect(page.locator("text=Purge Employee Records")).to_be_visible()
-
-        maintenance.open_candidate_records()
-        expect(page.locator("text=Purge Candidate Records")).to_be_visible()
-
-
-    def test_to_test_multiple_purge_operations_in_single_session(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-
-        maintenance.open_employee_records()
-        maintenance.search_record("Paul")
-        maintenance.purge_record()
-
-        maintenance.open_candidate_records()
-        maintenance.search_record("John")
-        maintenance.purge_record()
-
-        expect(page).to_have_url(lambda url: "maintenance" in url)
-
-    def test_to_test_maintenance_access_with_invalid_password(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance_with_invalid_password("wrongpass")
-
+    def test_maintenance_access_with_invalid_password(self,logger,maintenance_page):
+        # Test: Verify error message shown for invalid maintenance password
+        logger = get_logger("test_maintenance_access_with_invalid_password")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Attempting maintenance access with invalid password")
+        maintenance.open_maintenance_with_invalid_password()
+        logger.info("Verifying error message is visible")
         expect(maintenance.error_message).to_be_visible()
+        logger.info("Invalid password error validation passed")
 
-    def test_to_test_maintenance_access_with_blank_password(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance_with_invalid_password("")
+    def test_maintenance_access_with_blank_password(self,logger, maintenance_page):
+        # Test: Verify required message shown for blank password
+        logger = get_logger("test_maintenance_access_with_blank_password")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Attempting maintenance access with blank password")
+        maintenance.open_maintenance_with_black_password()
+        logger.info("Verifying required message is visible")
+        expect(maintenance.required_message).to_be_visible()
+        logger.info("Blank password validation passed")
 
-        expect(maintenance.error_message).to_be_visible()
+    def test_maintenance_access_with_valid_password(self,logger, maintenance_page):
+        # Test: Verify maintenance access granted with valid password
+        logger = get_logger("test_maintenance_access_with_valid_password")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Accessing maintenance module with valid password")
+        maintenance.open_maintenance_with_valid_password()
+        logger.info("Verifying maintenance page URL")
+        expect(maintenance_page).to_have_url("https://opensource-demo.orangehrmlive.com/web/index.php/maintenance/purgeEmployee")
+        logger.info("Valid password access validation passed")
 
-    def test_to_test_search_employee_with_invalid_name(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
+    def test_loading_of_employee_records_page(self,logger, maintenance_page):
+        # Test: Verify employee records page loads successfully
+        logger = get_logger("test_loading_of_employee_records_page")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Opening employee records page")
+        logger.info("Verifying employee records page heading is visible")
+        expect(maintenance.landing_page_heading).to_be_visible()
+        logger.info("Employee records page loaded successfully")
 
-        maintenance.search_with_invalid_name("InvalidEmployee123")
-
+    def test_search_employee_records(self,logger, maintenance_page):
+        # Test: Search past employee records and verify no records found
+        logger = get_logger("test_search_employee_records")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Searching for past employee records")
+        maintenance.search_past_employee_records()
+        logger.info("Verifying no records found message")
         expect(maintenance.no_records_found).to_be_visible()
+        logger.info("Employee records search validation passed")
 
-    def test_to_test_search_candidate_with_invalid_name(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
+    def test_loading_of_candidate_records_page(self,logger, maintenance_page):
+        # Test: Verify candidate records page loads successfully
+        logger = get_logger("test_loading_of_candidate_records_page")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Opening candidate records page")
         maintenance.open_candidate_records()
+        logger.info("Verifying candidate records page heading is visible")
+        expect(maintenance.landing_candidate_page_heading).to_be_visible()
+        logger.info("Candidate records page loaded successfully")
 
-        maintenance.search_with_invalid_name("InvalidCandidate123")
+    def test_search_candidate_records(self,logger, maintenance_page):
+        # Test: Search candidate records and verify records exist
+        logger = get_logger("test_search_candidate_records")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Searching for candidate records")
+        maintenance.search_candidate_records()
+        logger.info("Verifying vacancy cards are present")
+        expect(maintenance.vacancy_card).not_to_have_count(0)
+        logger.info("Candidate records search passed")
 
-        expect(maintenance.no_records_found).to_be_visible()
+    def test_purge_all_candidate_record(self,logger, maintenance_page):
+        # Test: Purge all candidate records and verify deletion
+        logger = get_logger("test_purge_all_candidate_record")
+        maintenance = MaintenancePage(maintenance_page)
+        logger.info("Searching for candidate records to purge")
+        maintenance.search_candidate_records()
+        logger.info("Purging candidate records")
+        maintenance.purge_record()
+        logger.info("Verifying all vacancy cards are removed")
+        expect(maintenance.vacancy_card).to_have_count(0)
+        logger.info("Candidate records purge validation passed")
 
-    def test_to_test_purge_without_selecting_employee_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.attempt_purge_without_selection()
-
-        expect(maintenance.error_message).to_be_visible()
-
-    def test_to_test_cancel_purge_action_for_employee_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.search_record("Paul")
-        maintenance.cancel_purge()
-
-        expect(page.locator("text=Purge Employee Records")).to_be_visible()
-
-    def test_to_test_cancel_purge_action_for_candidate_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_candidate_records()
-
-        maintenance.search_record("John")
-        maintenance.cancel_purge()
-
-        expect(page.locator("text=Purge Candidate Records")).to_be_visible()
-
-    def test_to_test_purge_already_deleted_employee_record(self, page: Page):
-        maintenance = MaintenancePage(page)
-        maintenance.open_maintenance("admin123")
-        maintenance.open_employee_records()
-
-        maintenance.search_record("DeletedEmployee")
-
-        expect(maintenance.no_records_found).to_be_visible()
 

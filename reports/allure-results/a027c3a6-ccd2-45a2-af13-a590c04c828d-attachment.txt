@@ -1,0 +1,3 @@
+INFO     test_salary_create_edit_delete[chromium]:MyInfoPage.py:47 Opening tab: Salary
+INFO     test_salary_create_edit_delete[chromium]:MyInfoPage.py:333 Adding salary: Basic
+INFO     test_salary_create_edit_delete[chromium]:MyInfoPage.py:120 Clicking Add

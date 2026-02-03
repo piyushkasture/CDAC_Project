@@ -1,0 +1,1 @@
+INFO     test_salary_create_edit_delete[chromium]:MyInfoPage.py:47 Opening tab: Salary
