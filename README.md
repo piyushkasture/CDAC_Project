@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 ---
 
-## 🧭 Project Structure
+## Project Structure
 
 - `pages/` — Page Objects (e.g., `LoginPage.py`, `AdmminPage.py`)
 - `tests/` — Test suites organized by feature
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running Tests
+## Running Tests
 
 - Run the full test suite using pytest:
 
