@@ -67,16 +67,6 @@ def page(request):
     login = LoginPage(page)
     login.login(username, password)
 
-
-    # #LOGIN ONCE
-    # login = LoginPage(page)
-    # login.login("Admin", "admin123")
-    #
-    #
-    # dashboard = DashboardPage(page)
-    # dashboard.is_dashboard_visible()
-
-    # Yield page to test, cleanup happens after test completes
     yield page
 
     # Browser close happens after screenshots
@@ -128,6 +118,40 @@ def maintenance_page(page):
 def buzz_page(page):
     dashboard = DashboardPage(page)
     dashboard.go_to_buzz()   # clicks profile picture
+    return page
+
+@pytest.fixture(scope="class")
+def pim_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_pim()  # clicks profile picture
+    return page
+
+
+@pytest.fixture(scope="class")
+def leave_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_leave()  # clicks profile picture
+    return page
+
+
+@pytest.fixture(scope="class")
+def time_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_time()  # clicks profile picture
+    return page
+
+
+@pytest.fixture(scope="class")
+def recruitment_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_recruitment()  # clicks profile picture
+    return page
+
+
+@pytest.fixture(scope="class")
+def claim_page(page):
+    dashboard = DashboardPage(page)
+    dashboard.go_to_claim()  # clicks Claim
     return page
 
 

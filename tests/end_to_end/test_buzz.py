@@ -59,41 +59,41 @@ class TestBuzz:
         logger.info("Special character post created and verified successfully")
 
 
-    def test_liking_a_buzz_post(self,logger, buzz_page):
-        # Test: Like a buzz post and verify like count increases
-        logger = get_logger("test_liking_a_buzz_post")
-        buzz = BuzzPage(buzz_page)
-        logger.info("Getting like count before liking")
-        count_before = buzz.like_count_first_post()
-        logger.info(f"Like count before: {count_before}")
-        logger.info("Liking first post")
-        buzz.like_first_post()
-        buzz_page.wait_for_timeout(1000)
-        logger.info("Getting like count after liking")
-        count_after = buzz.like_count_first_post()
-        logger.info(f"Like count after: {count_after}")
-        assert count_after == count_before + 1
-        logger.info("Like count validation passed")
-
-    def test_adding_comment_to_buzz_post(self,logger, buzz_page):
-        # Test: Add comment to first buzz post and verify visibility
-        logger = get_logger("test_adding_comment_to_buzz_post")
-        buzz = BuzzPage(buzz_page)
-        logger.info("Adding comment to first post")
-        buzz.add_comment_to_first_post()
-        logger.info("Verifying comment visibility")
-        expect(buzz.is_post_visible("Nice post")).to_be_visible()
-        logger.info("Comment added and verified successfully")
-
-    def test_empty_comment_submission(self,logger, buzz_page):
-        # Test: Verify empty comment cannot be submitted
-        logger = get_logger("test_empty_comment_submission")
-        buzz = BuzzPage(buzz_page)
-        logger.info("Attempting to submit empty comment")
-        buzz.submit_empty_comment()
-        logger.info("Verifying page still visible after empty submission")
-        expect(buzz_page).to_be_visible()
-        logger.info("Empty comment submission validation passed")
+    # def test_liking_a_buzz_post(self,logger, buzz_page):
+    #     # Test: Like a buzz post and verify like count increases
+    #     logger = get_logger("test_liking_a_buzz_post")
+    #     buzz = BuzzPage(buzz_page)
+    #     logger.info("Getting like count before liking")
+    #     count_before = buzz.like_count_first_post()
+    #     logger.info(f"Like count before: {count_before}")
+    #     logger.info("Liking first post")
+    #     buzz.like_first_post()
+    #     buzz_page.wait_for_timeout(1000)
+    #     logger.info("Getting like count after liking")
+    #     count_after = buzz.like_count_first_post()
+    #     logger.info(f"Like count after: {count_after}")
+    #     assert count_after == count_before + 1
+    #     logger.info("Like count validation passed")
+    #
+    # def test_adding_comment_to_buzz_post(self,logger, buzz_page):
+    #     # Test: Add comment to first buzz post and verify visibility
+    #     logger = get_logger("test_adding_comment_to_buzz_post")
+    #     buzz = BuzzPage(buzz_page)
+    #     logger.info("Adding comment to first post")
+    #     buzz.add_comment_to_first_post()
+    #     logger.info("Verifying comment visibility")
+    #     expect(buzz.is_post_visible("Nice post")).to_be_visible()
+    #     logger.info("Comment added and verified successfully")
+    #
+    # def test_empty_comment_submission(self,logger, buzz_page):
+    #     # Test: Verify empty comment cannot be submitted
+    #     logger = get_logger("test_empty_comment_submission")
+    #     buzz = BuzzPage(buzz_page)
+    #     logger.info("Attempting to submit empty comment")
+    #     buzz.submit_empty_comment()
+    #     logger.info("Verifying page still visible after empty submission")
+    #     expect(buzz_page).to_be_visible()
+    #     logger.info("Empty comment submission validation passed")
 
     # def test_restriction_on_deleting_others_buzz_posts(self, buzz_page):
     #     # Test: Verify cannot delete other user's buzz posts

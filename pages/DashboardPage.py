@@ -32,6 +32,8 @@ class DashboardPage(BasePage):
         self.directory_menu = page.get_by_role("link", name="Directory")
         self.maintenance_menu = page.get_by_role("link", name="Maintenance")
         self.buzz_menu = page.get_by_role("link", name="Buzz")
+        self.time_menu = page.get_by_role("link", name="Time")
+        self.claim_menu = page.get_by_role("link", name="Claim")
 
     # Dashboard validations
     def is_dashboard_visible(self):
@@ -73,3 +75,9 @@ class DashboardPage(BasePage):
 
     def go_to_buzz(self):
         self.buzz_menu.click()
+
+    def go_to_time(self):
+        self.time_menu.click()
+
+    def go_to_claim(self):
+        self.claim_menu.click()
