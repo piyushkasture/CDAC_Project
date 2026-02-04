@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 - `pages/` — Page Objects (e.g., `LoginPage.py`, `AdminPage.py`)
 - `tests/` — Test suites organized by feature
-- `testData/` — Test data files (`*.json`)
+- `testData/` — Test data files (e.g., `my_info_test_data.json`, `login_test_data.json`)
 - `testCase/` — Testcase file
 - `utils/` — Helpers (`DriverManager.py`, `DataReader.py`, `CustomLogger.py`)
 - `config/environments/` — Environment configuration (e.g., `dev.yaml`)
