@@ -5,7 +5,6 @@ This project is a UI automation testing framework built using Playwright with Py
 
 - **Python 3.10+**
 - pip
-- A browser (Chrome/Chromium, Firefox) and corresponding driver if using direct WebDriver
 
 ### Setup (Windows)
 
