@@ -24,9 +24,10 @@ pip install -r requirements.txt
 
 ## Project Structure
 
-- `pages/` — Page Objects (e.g., `LoginPage.py`, `AdmminPage.py`)
+- `pages/` — Page Objects (e.g., `LoginPage.py`, `AdminPage.py`)
 - `tests/` — Test suites organized by feature
 - `testData/` — Test data files (`*.json`)
+- `testCase/` — Testcase file
 - `utils/` — Helpers (`DriverManager.py`, `DataReader.py`, `CustomLogger.py`)
 - `config/environments/` — Environment configuration (e.g., `dev.yaml`)
 - `reports/` — Generated HTML and Allure reports
